@@ -1,3 +1,10 @@
 main(List<String> arguments) {
-  print("Hello world");
+  var intTwo = 2;
+  print(intTwo);
+
+  if ((2 > 1)) {
+    print("Hello");
+  } else {
+    print("Bye");
+  }
 }
