@@ -1,8 +1,12 @@
 main(List<String> arguments) {
-  print(isGreater(a: 10, b: 20));
+  print(printMessage("Rohan", "hello"));
+  print(printMessage("Rohan", "hello", "OnePlus2"));
 }
 
-//function(...) => expression;
-// is an alternative to
-//function(...){ return expression;}
-isGreater({int a, int b}) => a > b;
+printMessage(String name, String message, [String device]) {
+  var result = "$name says $message";
+  if (device != null)
+    result = "$result from his $device phone";
+
+  return result;
+}
